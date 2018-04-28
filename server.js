@@ -34,6 +34,10 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs');
+});
+
 app.get('/about', (req, res) => {
   res.render('about.hbs',{pageTitle: 'About Jack Page', currentYear: new Date().getFullYear()});
 });
